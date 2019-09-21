@@ -1,0 +1,217 @@
+
+@media screen and (max-width: 768px){
+    #header-img-M {
+        width: 100%;
+        background: url(./img/Asset\ 10.svg);
+        display: block;
+    }
+    #header-img-D{display: none}
+
+    #logo{ display: none}
+
+    #bottom-img-M {
+        width: 100%;
+        display: block;
+        /* background: url(./img/Asset\ 3.svg) no-repeat left bottom; */
+    }
+    #bottom-img-D{display: none}
+
+    h1.main {
+        font-family: 'Domine', serif;
+        font-size: 8vw;
+        padding-left:1em; 
+        color: #273043;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    h4.main {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        padding-left: 2.8em;
+        font-size: 3vw;
+        color: #9197AE;
+        font-weight: normal;
+        padding-top:.5vw;
+        padding-bottom: .5vw; 
+    }
+
+    h3.main {
+        font-family: 'Domine', serif;
+        font-size: 4vw;
+        padding-left: 2.1em;
+        color: #39CCC7;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    #button-D{display: none}
+    #button-M
+    {
+        display: block;
+        margin: 15vw;
+    }
+    button.main{
+        align-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vw;
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 2px solid;
+        border-color: #39CCC7;
+        background: inherit;
+        border-radius: 4px;
+    }
+
+    button.main:hover{
+        align-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vw;
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 2px solid;
+        border-color: #39CCC7;
+        border-radius: 4px;
+        background: #39CCC7;
+        color: white;
+        cursor: pointer;
+    }
+
+    #linkedin{
+        width: 15%;
+        margin-left:20vw;
+        margin-bottom: 3vw;
+        float: left;
+    
+    }
+    #linkedin:hover{
+        transform: none;
+        transition: none;
+    }
+    
+    #mail{
+        margin-top: 1%;
+        margin-right: 20vw;
+        width: 20%;
+        float: right;
+    }
+    #mail:hover{
+        transform: none;
+        transition: none;
+    }
+    #contact{
+        width: 100%;
+        float: none;
+        margin-right:0;
+        margin-left: 0;
+        max-height: fit-content;
+    }
+
+    
+    #d1{
+        margin-right: 7.5vw; 
+        margin-left: 7.5vw;
+        overflow: auto
+    }
+    #d2{
+        margin-right: 7.5vw; 
+        margin-left: 7.5vw;
+        overflow: auto
+    }
+    #d3{
+        margin-right: 7.5vw; 
+        margin-left: 7.5vw;
+        overflow: auto
+    }
+
+    h2.right{
+        font-family: 'Domine', serif;
+        font-size: 6vw;
+        float: none;
+        text-align:center;
+        color: #273043;
+        margin: 6vw;
+        padding-bottom: 3vw;
+    }
+    h3.right {
+        font-family: 'Domine', serif;
+        font-size: 4vw;
+        color: #39CCC7;
+        margin: 6vw;
+        text-align: center;
+        font-weight: normal;
+    }
+    p.right {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vw;
+        color: #9197AE;
+        font-weight: normal;
+        text-align: center;
+        margin: auto;
+        padding-top: 3em;
+        width: 70vw;
+        float: none;
+    }
+    img.right{
+        margin:auto;
+        display: block;
+        float:none;
+        width: 70%;
+    }
+
+    img.right-b{
+        margin:auto;
+        float: none;
+        display: block;
+        width: 70%;
+    }
+
+
+    h2.left{
+        font-family: 'Domine', serif;
+        font-size: 6vw;
+        float: none;
+        text-align:center;
+        color: #273043;
+        margin: 6vw;
+        padding-bottom: 3vw;
+    }
+    h3.left {
+        font-family: 'Domine', serif;
+        font-size: 4vw;
+        color: #39CCC7;
+        margin: 6vw;
+        text-align: center;
+        font-weight: normal;
+    }
+    p.left {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vw;
+        color: #9197AE;
+        font-weight: normal;
+        text-align: center;
+        margin: auto;
+        padding-top: 3em;
+        width: 70vw;
+        float: none;
+    }
+    img.left{
+        margin:auto;
+        float: none;
+        display: block;
+        width: 70%;
+    }
+
+    footer {
+        width: 100%;
+        display: block;
+        background: url(./img/Asset\ 12.svg) no-repeat left bottom;
+    }
+        
+        
+
+}
