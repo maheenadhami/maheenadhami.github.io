@@ -1,0 +1,85 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* ************Header********** */
+
+#header-img-D {
+    width: 100%;
+    background: url(./img/Asset\ 1.svg);
+    display: block;
+}
+#header-img-M{display: none}
+
+
+#productImage{
+    width: 30%;
+    display: block;
+    float: right;
+    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-top: 5vw;
+}
+
+h1.main {
+    font-family: 'Domine', serif;
+    font-size: 4.5vw;
+    color: #273043;
+    margin: 0;
+    font-weight: normal;
+}
+
+p.main {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    color: #9197AE;
+    font-weight: normal;
+    padding-top:.5vw;
+    padding-bottom: .5vw; 
+}
+
+h3.main {
+    font-family: 'Domine', serif;
+    font-size: 2vw;
+    color: #39CCC7;
+    margin: 0;
+    font-weight: normal;
+}
+
+button.main{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid;
+    border-color: #39CCC7;
+    background: inherit;
+    border-radius: 2px;
+}
+
+button.main:hover{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    color: white;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid;
+    border-color: #39CCC7;
+    background: #39CCC7;
+    border-radius: 2px;
+    transform: scale(1.25);
+    transition: .3s;
+}
+#button-M{ display: none}
