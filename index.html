@@ -2,123 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles-Desktop.css">
-    <link rel="stylesheet" href="style-mobile.css">
-    <link href="https://fonts.googleapis.com/css?family=Domine|Roboto&display=swap" rel="styles.css">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">    
     <link rel="icon" href="./img/favicon-.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maheen Adhami</title>
+    <style>
+        #menu-toggle:checked + #menu {
+          display:block;  
+        }
+        /* #heroimg {
+            width: 100%;
+            background-size:contain;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 767px) {
+            #heroimg {background-image: url(./img/Hero.svg)}
+        }
+        @media screen and (min-width: 768px) {
+            #heroimg {background-image: url(./img/Hero.svg)}
+        } */
+    </style>
 </head>
 
-
 <body>
-    <header>
-        <div>
-            <img id="header-img-D" src="./img/Asset 1.svg" alt="header">
-            <img id="header-img-M" src="./img/Asset 11.svg" alt="header">
-            <img id="logo" src="img/Asset 2.svg">
-            <div style=" margin-left: 6vw; margin-top: 5vw">
-                <h4 class = "main"> Hi there I'm</h3>
-                <h1 class = "main"> Maheen Adhami</h1>
-                <h3 class = "main">Designer, Developer, Artist</h2>
-                <h4 class="main">Take a look at some of my work below </h3>
-                <br/>
-                <a href="./Documents/Resume.pdf" download="Maheen Adhami-Resume" target="_blank">
-                    <button class="main" id = "button-D"> Resume</button>
-                </a>
-                <a href="#work">
-                    <button class="main" id="button-D" style ="margin-left: 20px"> Projects</button>
-                </a>
-               
-                <div id="button-M">
-                    <a href="./Documents/Resume.pdf" download="Maheen Adhami-Resume" target="_blank">
-                        <button class="main"> Resume</button>
-                    </a>
-                    <br/> <br/>
-                    <a href="#work">
-                        <button class="main"> Projects</button>
-                    </a>
+    <div class="min-h-full bg-gradient-to-b from-peach bg-cover pb-0.5" id="heroimg">
+        <div class="w-full bg-local" style="background-image: url(img/Clouds.svg)">
+            <header class="md:px-16 px-6 flex flex-wrap items-center md:py-0 py-2 ">
+                <div class ="flex-1 flex justify-between items-center">
+                    <p class="text-peach">.</p>
                 </div>
-                
+                    <label for="menu-toggle" class="cursor-pointer md:hidden block"> <img src="img/Hamburger menu.svg"></label>
+                    <input type="checkbox" class="hidden" id="menu-toggle"/>
+                    <div class=" hidden md:flex md:items=center md:w-auto w-full" id="menu">
+                        <nav>
+                            <ul class= "md:flex items-center justify-between text-base text-gray-700 text-2xl font-alice pt-4 md:pt-2">
+                                <li><a href="#" class= "md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-salmon">Resume</a></li>
+                                <li><a href="#" class= "md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-salmon">About</a></li>
+                                <li><a href="#" class= "md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-salmon">Work</a></li>
+                            </ul>
+                        </nav>
+        
+                    </div>
+            </header>
+            <div class="w-8/12 mx-auto" style="margin-left: 2vw; margin-top: 8vw; margin-bottom:30vh">
+                <h2 class="font-alice text-navy-1 text-4xl md:pt-3 pl-16">hi there, i'm</h2>
+                <h1 class="font-alice text-navy-1 text-7xl md:pt-3 pl-16">Maheen Adhami</h1>
+                <h3 class ="font-opens text-blue-1 text-2xl md:pt-3 pl-16">A systems design engineer with a love for creating ethical designs & making the internet a more inclusive place.</h3>
+                <button class="md:mt-6 ml-16 h-12 px-10 text-lg text-navy-1 transition-colors duration-150 bg-white rounded-lg focus:shadow-outline hover: border-salmon text-white">Lets Chat</button>
             </div>
-            <img id="bottom-img-D" src="img/Asset 3.svg">
-            <img id="bottom-img-M" src="img/Asset 9.svg">
         </div>
-    </header>
-    
-    <div id ="d1">
-        <h2 class ="right">Who exactly am I?</h2>
-        <img class="right" src="img/Asset 4.svg">
-        <p class="right">I’m a Systems design engineering student at the university of waterloo 
-                that’s passionate about design and the product lifecycle.<br/> <br/> I like to think of 
-                myself as fluid: someone that can adapt to anything, and someone that loves
-                spreading out to explore the new things. I come from a pretty diverse background
-                that’s allowed me to a part of the complete product lifecycle. <br/> <br/> I’m also a 
-                <a href="https://www.instagram.com/hands_of_heaven/" id = "link">henna artist </a> 
-                in my free time, and love doing art. If you want to get to know me further, 
-                feel free to keep scrolling, or reach out to me through one of the links below.                 
-        </p>
-        <br><br>
-        <div id="contact">
-                <a href="https://ca.linkedin.com/in/maheenadhami"><img id="linkedin" src="img/Asset 14.svg"></a>
-                <a href="mailto:mahi.adhami@gmail.com"><img id="mail" src="img/Asset 13.svg"></a>
+    </div>
+    <div class="md:w-1/2 w-5/6 mx-auto">
+        <h2 class="font-alice text-gray-700 text-4xl text-center pb-5">Honeycomb Design System</h2>
+        <p class="font-opens text-gray-700 text-lg text-center pb-5">Case Study Coming Soon</p>
+        <div class="flex justify-center">
+        <span class="text-m font-opens inline-block py-1 px-5 mx-3 rounded text-navy-1 border border-navy-1"> Component Library</span>
+        <span class="text-m font-opens inline-block py-1 px-5 mx-3 rounded text-navy-1 border border-navy-1"> UI Design</span>
+        <span class="text-m font-opens inline-block py-1 px-5 mx-3 rounded text-navy-1 border border-navy-1"> Interaction Design</span>
+        </div>
+        <div class="min-w-full overflow-hidden rounded-lg">
+            <img class="object-cover w-full" src="img/Honeycomb.png" alt="Flower and sky"/>
         </div>
     </div>
 
-
-    <div id="d2">
-        <a name = "work"></a>
-        <h2 class ="left">Here’s what I’ve been up to lately</h2>
-        <h3 class="left" style ="margin-top: 3em">Soulfx</h3>
-        <a href="https://www.soulfx.com/case-studies/"><img id="link-img" class="left" src="img/Soulfx.svg"></a>
-        <p class="left">Over the summer, I was a UX Designer at Soulfx Technologies where I designed 
-                software and websites that are used by healthcare and pharmaceutical companies. 
-                A lot of my work focused on the systems design of the components that we were created
-                <br/> <br/>
-                <a href="https://www.soulfx.com/case-studies/" id = "link"> Check out their case studies to learn about the kinds of projects I worked on
-                </a>
-        </p>
+    <div class="pt-24 pb-24 md:w-1/2 w-5/6 mx-auto">
+        <h2 class="font-alice text-gray-700 text-4xl text-center pb-5">SoundLabs</h2>
+        <p class="font-opens text-gray-700 text-lg text-center pb-5">Case Study Coming Soon</p>
+        <div class="flex justify-center">
+        <span class="text-m font-opens inline-block py-1 px-5 mx-3 rounded text-navy-1 border border-navy-1"> User Research</span>
+        <span class="text-m font-opens inline-block py-1 px-5 mx-3 rounded text-navy-1 border border-navy-1"> Prototyping</span>
+        <span class="text-m font-opens inline-block py-1 px-5 mx-3 rounded text-navy-1 border border-navy-1"> Machine Learning</span>
+        </div>
+        <div class="min-w-full overflow-hidden rounded-lg">
+            <img class="object-cover w-full" src="img/Soundlabs.png" alt="Flower and sky"/>
+        </div>
     </div>
-
-    <div id="d1">
-        <h3 class="right">Digital Bartender</h3>
-        <a href="./digitalBartender.html">
-            <img id="link-img" class="right-b" src="img/Bartender.svg">
-         </a>
-        <p class="right">Currently I’m working on designing the interface for a digital bartender 
-                device which lets users select a drink, then mixes it. This project had many technical
-                limitations but has been a great challenge to work on. <br/> <br/>
-                <a href="./digitalBartender.html" id = "link">
-                    Curious about how I overcame the challenges I faced?
-                </a>
-        </p>
-    </div>
-    <div id="d3">
-        <h3 class="left">Shottle</h3>
-        <a href="./Shottle.html">
-            <img id="link-img" class="left" src="img/Shottle.svg">
-        </a>
-        <p class="left">I’ve also worked on developing a product in collaboration with a few others that helps
-            promote healthy alcohol consumption in upper year students. This project focused on user research,
-            and following an iterative design process. <br/> <br/>
-            <a href="./Shottle.html" id = "link">
-                Want to learn more about it?
-            </a>    
-        </p>
-    </div>
-    <div id="d1">
-        <h3 class="right">Dead Zone</h3>
-        <img class="right-b" src="img/Deadzone.svg">
-        <p class="right">Another cool project that I’ve worked on is an escape room game called dead zone.
-            I developed it using java and had a lot of fun doing the game design for it.  
-                
-        </p>
-    </div>
-
-        <footer>
-            <img id="bottom-img-D" src="img/Asset 8.svg">
-            <img id="bottom-img-M" src="img/Asset 12.svg">
-        </footer>
+   </body>
 </body>
 </html>
