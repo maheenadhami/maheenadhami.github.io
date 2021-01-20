@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">    
-    <link rel="icon" href="./img/favicon-.png">
+    <link rel="icon" href="./img/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maheen Adhami</title>
@@ -147,8 +147,51 @@
             <h3 class=" w-3/4 mx-auto font-opens text-salmon text-center text-xl pt-8">
                 And their design systems need to factor in external users/brands, whereas ours does not
             </h3>
+            <p class="pt-3 font-opens text-navy-1">
+                Another point I noted while looking through these systems was that their style library, and component library were usually 2 different things. 
+                The style library contained guidelines, rules, colours and typography while the components used those styles to make bigger pieces. 
+                For these larger companies, each component was available in a both a code library, as well as a visual component on Sketch or Figma. 
+                To aim for all of those elements as a first round for developing the design system seemed far too ambitious, these design systems had been 
+                curated over multiple years and were living, breathing documents that were regularly updated. 
+            </br></br>
+                Finally, I referenced the holy grail of design system basics : Atomic Design by Brad Frost. I used this to get an idea of how to break down 
+                our existing components into small pieces. Items such as status badges, and progress indicators were used in multiple locations, and depending
+                on the platform (app vs web) these components looked slightly different but still had the same base. 
+            </p>
+            <h3 class=" w-3/4 mx-auto font-opens text-salmon text-center text-xl pt-8">
+                After conducting my research I determined that our design system would begin with 3 major parts:
+            </h3>
+            <img class="mx-auto flex justify-center object-cover py-8 w-1/2" src="img/3comp.png" alt="Flower and sky"/>
         </div>
     </div>
+    <div class="md:w-1/2 w-5/6 mx-auto bg-white pb-16">
+        <h3 class="font-alice text-navy-1 text-3xl  pt-16 pb-5">Putting it all together</h3>
+        <p class="pt-3 font-opens text-navy-1">
+            Now that I had a clearer idea of what I wanted to do it was time to build it. My main goal was to ensure that the system remain as usable as possible. 
+            
+        </p>
+        <h3 class=" w-3/4 mx-auto font-opens text-salmon text-center text-xl pt-8">
+            Reflecting back on the original problem: I needed to create a system that would help us work more efficiently and improve communication.
+        </h3>
+        <p class="pt-3 font-opens text-navy-1 pt-8">
+            Keeping that into consideration, one of the most important things that I ensured I added were use cases for things such as colours, buttons, 
+            and input fields. It was crucial that there was no ambiguity here, because these parts are really the foundation for all of our designs. For example,
+            the each colour was labeled so that it's clear what its used for. 
+        </p>
+        <img class="mx-auto flex justify-center object-cover py-8 w-3/4" src="img/Colours.png" alt="Flower and sky"/>
+        <p class="pt-3 font-opens text-navy-1 pt-8">
+            Additionally, with each colour there is a clear do and don’t for when the colour is appropriate. This is to ensure that regardless
+             of what your role in the company is, you can independently use the branding colours appropriately, and ensure that the products
+              you are creating will be legible, and appealing to the eye. 
+            </br></br>
+            After that I sorted the components we had into their places. The overall structure of the files was the style guide first, 
+            then universal components which were shared between all of our products, and then a component library that was organized by product. 
+            The style guide and universal components had use cases and rules associated with them and were smaller pages so that the user would be
+            able to read through all the content in one glance. The product pages on the other hand were created as more of a reference guide that
+            will allow the user to find the component they’re looking for and either copy and paste it or use it to build the component in code. 
+        </p>
+    </div>
+    
    </body>
 </body>
 </html>
